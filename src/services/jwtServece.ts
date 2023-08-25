@@ -11,7 +11,7 @@ export const jwtService = {
     },
 
     // Verificar Token
-    verifyToken: (token: string, callbackfn: jwt.VerifyCallback) => {
+    verifyToken: (token: string, callbackfn: jwt.VerifyCallback)=>{
         jwt.verify(token, secret, callbackfn)
     }
 }
