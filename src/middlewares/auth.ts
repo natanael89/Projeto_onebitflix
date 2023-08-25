@@ -17,7 +17,7 @@ export function ensureAuth(req: AuthenticatedRequest, res: Response, next: NextF
 
     const token = authorizationHeader.replace(/Bearer /, '')
 
-    jwtService.verifyToken(token, (err, decoded)=>{
+    jwtService.verifyToken(token, async (err, decoded)=>{
         if(err || typeof decoded === 'undefined') return res.json({
             message: 'Não autorizado: token inválido.'
         })
