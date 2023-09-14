@@ -1,0 +1,16 @@
+@import "../../../../styles/colors.module.scss";
+
+.sectionTile {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slideSectionBtn {
+    transition: 0.3s;
+
+    &:hover {
+       border-color: $lightRed;
+       background-color: transparent;
+       color: $lightGray;
+    }
+}

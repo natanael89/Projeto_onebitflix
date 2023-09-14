@@ -1,0 +1,55 @@
+@import "../../../../styles/colors.module.scss";
+
+.slide {
+    width: 280px;
+    height: 300px;
+    border: 1px solid $darkGray;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-left: 12px;
+
+    overflow: hidden;
+    text-overflow: clip;
+
+    &:hover {
+        border-color: $lightRed;
+        height: 320px;
+    }
+
+}
+
+.slideImg {
+    width: 100%;
+    height: 170px;
+}
+
+.slideTitle {
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.slideDescription {
+    font-size: 14px;
+    padding: 0px 16px;
+    color: #ccc8c8;
+}
+
+@media (max-width: 1200px) {
+    .slide {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .slide {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .slide {
+        width: 100%;
+        margin-left: 0;
+    }
+}
