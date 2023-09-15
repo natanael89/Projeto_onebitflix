@@ -1,0 +1,39 @@
+@import "../../../../styles/colors.module.scss";
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 26px 0px;
+}
+
+.footerLogo {
+    width: 220px;
+}
+
+
+.footerLink {
+    text-decoration: none;
+    color: $mediumGray;
+    transition: 0.3s;
+
+    &:hover {
+        color: $lightGray;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .footer {
+        padding: 26px 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 413px) {
+    .footer {
+        justify-content: center;
+    }
+}
