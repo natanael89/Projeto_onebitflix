@@ -11,6 +11,12 @@
     margin-bottom: 40px;
 }
 
+.formParagrafo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 .form {
     width: 600px;
     padding: 50px;
@@ -32,7 +38,7 @@
     &::placeholder{
         color: $lightGray;
     }
-    &::focus{
+    &:focus{
       background-color: transparent;
       border-color: $lightGray;
       color: white;
@@ -42,7 +48,6 @@
 
 .inputName {
     @extend .input;
-    text-transform: uppercase;
     &::placeholder {
         text-decoration: none;
     }
@@ -79,7 +84,7 @@
 
 @media (max-width: 423) {
     .formTitle {
-        font-size: 7px;
+        font-size: 24px;
         text-align: center;
     }
 }
