@@ -1,0 +1,115 @@
+@import "../../../../styles/colors.module.scss";
+
+.imgLogoNav{
+   width: 160px;
+   cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 14px;
+}
+
+.userProfile{
+   font-weight: bold;
+   font-size: 24px;
+   background-color: white;
+   text-transform: uppercase;
+   color: black;
+   min-width: 45px;
+   min-height: 45px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   margin: 0px 14px;
+}
+
+.input {
+    background-color: transparent;
+    color: white;
+    border-color: $lightGray;
+    &:focus {
+        background-color: transparent;
+        color: white;
+        border-color: $mediumGray;
+        box-shadow: none;
+    }
+
+    &::placeholder{
+        color: white;
+    }
+}
+
+.searchImg {
+    width: 26px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    top: 85px;
+    right: 10%;
+    background-color: #303030;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 8px 6px 4px rgba(0, 0, 0, 0.486);
+
+    /* CONTEÚDO DO MODAL*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 24px;
+}
+
+.modalLink {
+    color: white;
+    margin: 5px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        color: $lightRed;
+    }
+}
+
+.overlayModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+
+@media (max-width: 575px){
+    .nav {
+        padding: 24px 14px;
+        gap: 20px;
+    }
+
+    .userProfile{
+        margin: 0;
+    }
+};
+
+@media (max-width: 505px){
+    .nav{
+        justify-content: center;
+    }
+
+    .userProfile{
+        margin: 0;
+    }
+
+    .modal{
+        top: 140px;
+    }
+};
