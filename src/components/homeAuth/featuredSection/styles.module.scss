@@ -1,0 +1,81 @@
+@import "../../../../styles/colors.module.scss";
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    width: 660px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.description {
+    color: $lightGray;
+    font-size: 21px;
+    width: 660px;
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 35px;
+    &:hover{
+        border-color: $lightRed;
+        background-color: transparent;
+        color: $lightGray;
+    }
+}
+
+.buttonImg {
+    width: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .title {
+        width: 95%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .description {
+        width: 95%;
+        font-size: 18px;
+        margin-top: 25px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 410px) {
+    .title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .description {
+        width: 95%;
+        font-size: 14px;
+        margin-top: 25px;
+        height: 110px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .buttonImg {
+        width: 8px;
+    }
+}
