@@ -18,7 +18,7 @@ const Login = () => {
       if (sessionStorage.getItem("onebitflix-token")){
         router.push("/home");
       }
-    }, [router]);
+    }, []);
 
     
     useEffect(()=> {

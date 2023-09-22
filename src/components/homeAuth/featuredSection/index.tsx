@@ -21,7 +21,7 @@ const FeaturedSection = () => {
                 backgroundImage: `linear-gradient(to bottom, #6666661a, #151515), url(${process.env.NEXT_PUBLIC_BASEURL}/${course.thumbnailUrl})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                height: "480px"
+                height: "820px"
             }}>
                 <HeaderAuth/>
                 <Container className="pt-4">
