@@ -21,7 +21,7 @@ const HeaderAuth = () => {
     };
 
     const handleLogout = () => {
-        sessionStorage.clear
+        sessionStorage.clear();
 
         router.push("/")
     }

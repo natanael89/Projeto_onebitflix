@@ -11,7 +11,7 @@ const NewestCategory = () => {
     if(!data) return (
     <>
       <p>Loading...</p>
-    </>)
+    </>);
     
     return (
         <>
