@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { FormEvent, useEffect, useState } from "react";
 import ToastComponent from "@/src/components/common/toast";
 import authService from "@/src/services/authService";
+import HeaderNoAuth from "@/src/components/homeNoAuth/headerNoAuth";
 
 const Login = () => {
     const router = useRouter();
@@ -18,7 +19,7 @@ const Login = () => {
       if (sessionStorage.getItem("onebitflix-token")){
         router.push("/home");
       }
-    }, []);
+    }, [router]);
 
     
     useEffect(()=> {
@@ -61,10 +62,10 @@ const Login = () => {
         <>
           <Head>
             <title>Onebitflix - Login</title>
-            <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+            <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon"/>
           </Head>
           <main className={styles.main}>
-            <HeaderGeneric logoUrl="/" btnUrl="/register" btnContent="Quero fazer parte"/>
+            <HeaderGeneric  logoUrl="/" btnUrl="/register" btnContent="Quero fazer parte"/>
             <Container className="py-5">
                 <p className={styles.formTitle}>Bem-vindo(a) de volta!</p>
                 <Form className={styles.form} onSubmit={handleLogin}>

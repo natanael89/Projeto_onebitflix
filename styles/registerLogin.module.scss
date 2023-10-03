@@ -1,8 +1,17 @@
 @import "./colors.module.scss";
 
+
 .main{
     background-image: linear-gradient(to bottom, #151515, black);
+    background-image: linear-gradient(to bottom, #8b8b8b1a, #151515),
+    url("../public/homeNoAuth/homeNoAuth/backgroundPresentationSection.png")
+    ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 
 .formTitle {
     font-size: 40px;
@@ -17,10 +26,11 @@
 }
 
 .form {
-    width: 600px;
+    width: 560px;
     padding: 50px;
     border: 1px solid $darkGray;
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .lebel {

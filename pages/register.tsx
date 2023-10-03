@@ -18,7 +18,7 @@ const Register = () => {
       if (sessionStorage.getItem("onebitflix-token")){
         router.push("/home");
       }
-    }, []);
+    }, [router]);
 
     const handleRegister = async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();

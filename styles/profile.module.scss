@@ -1,0 +1,195 @@
+@import "./colors.module.scss";
+
+.form {
+    border: 1px solid $darkGray;
+    padding: 20px 0px;
+    max-width: 100%;
+}
+
+.formName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+
+.nameAbbreviation {
+    font-size: 40px;
+    font-weight:  bold;
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userName {
+    font-size: 30px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.memberTime {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.memberTimeImg {
+    width: 20px;
+}
+
+.memberTimeText {
+    font-size: 14px;
+    color: $lightGray;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inputFlexDiv {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 50px;
+   
+}
+
+.inputFlex {
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid $darkGray;
+    color: white;
+    transition: 0.3s;
+    text-transform: uppercase;
+    &::placeholder {
+        color: $lightGray;
+    }
+    &:focus {
+        box-shadow: none;
+        border-color: $lightRed;
+        background-color: transparent;
+        color: white;
+    }
+}
+
+.inputNormalDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.input {
+    @extend .inputFlex;
+    text-transform: lowercase;
+    width: 550px;
+}
+
+.formBtn {
+    border-color: $lightRed;
+    text-align: center;
+    color: white;
+    font-weight: bol;
+    font-size: 15px;
+    padding: 6px 20px;
+    transition: 0.4s;
+    &:hover {
+        border-color: $darkRed;
+        background-color: transparent;
+        color: $lightGray;
+    }
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 0px 0px 50px 0px;
+}
+
+.renderFormBtn {
+    display: block;
+    width: 200px;
+    border: 1px solid $darkGray;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 14px 0px;
+    &:hover{
+        background-color: transparent;
+        border-color: $lightRed;
+        color: $lightGray;
+    }
+}
+
+.header {
+    background-color: black;
+}
+
+.footer {
+    background-color: black;
+}
+
+@media (max-width: 991px) {
+    .title {
+        text-align: center;
+    }
+    .btnColum {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px){
+    .inputFlexDiv {
+        gap: 20px;
+    }
+    .inputFlex {
+        width: 400px;
+    }
+    .input {
+        width: 400px;
+    }
+}
+
+@media (max-width: 527px) {
+    .title {
+        font-size: 35px;
+    }
+
+    .formName {
+        width: 95%;
+    }
+
+    .nameAbbreviation {
+        font-size: 30px;
+        min-width: 60px;
+        min-height: 60px;
+    }
+
+    .userName {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 435px) {
+    .inputFlex {
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+}
