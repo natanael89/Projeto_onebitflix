@@ -1,4 +1,4 @@
 node_modules/
 uploads/*
 public/thumbnails
-src/database/index.ts/
+src/
