@@ -3,7 +3,7 @@
 
 .form {
     border: 1px solid $darkGray;
-    padding: 20px 50px;
+    padding: 20px 0px;
     max-width: 100%;
 }
 
@@ -97,6 +97,8 @@
 }
 
 .formBtn {
+    display: block;
+    margin: 10px auto;
     border-color: $lightRed;
     text-align: center;
     color: white;

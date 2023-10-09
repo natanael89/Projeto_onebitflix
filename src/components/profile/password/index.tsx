@@ -54,11 +54,11 @@ const PasswordForm = () => {
                      className={styles.inputFlex}
                     />
                 </FormGroup>
+               </div>
 
-                <Button className={styles.formBtn} outline>
+               <Button className={styles.formBtn} outline>
                     Salvar Alterações
                 </Button>
-               </div>
            </Form>
         </>
     );
