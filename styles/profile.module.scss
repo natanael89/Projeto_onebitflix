@@ -1,8 +1,9 @@
 @import "./colors.module.scss";
 
+
 .form {
     border: 1px solid $darkGray;
-    padding: 20px 0px;
+    padding: 20px 50px;
     max-width: 100%;
 }
 
@@ -130,8 +131,18 @@
     padding: 14px 0px;
     &:hover{
         background-color: transparent;
-        border-color: $lightRed;
-        color: $lightGray;
+        color: $lightRed;
+        background-color: $lightGray;
+    }
+
+    &:active {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    &:focus {
+        background-color: transparent;
+        box-shadow: none;
     }
 }
 
