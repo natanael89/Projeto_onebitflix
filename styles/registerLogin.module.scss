@@ -11,12 +11,18 @@
     background-repeat: no-repeat;
 }
 
+.conatinerLogin {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
 
 
 .formTitle {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .formParagrafo {
@@ -73,6 +79,10 @@
         color: $lightGray;
         border-color: $darkRed;
     }
+}
+
+.footerLogin {
+    margin-top: 20%;
 }
 
 @media (max-width: 767px) {

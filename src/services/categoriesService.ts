@@ -8,7 +8,7 @@ export type CategoryType = {
     id: number;
     name: string;
     position: number;
-    courses?: CourseType[];
+    courses?: CourseType[] | undefined;
 }
 
 const categoriesService = {

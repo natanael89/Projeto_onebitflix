@@ -28,7 +28,7 @@ const SlideComponent = ({course}: props) => {
                     arrows: course.length > 4 ? true : false,
                     drag: course.length > 4 ? true : false,
                     breakpoints: {
-                        1200: {
+                        1440: {
                             perPage: slidecount >= 2 ? 2 : 1,
                             width: slidecount >= 2 ? 640 : 300,
                             arrows: course.length > 2 ? true : false,

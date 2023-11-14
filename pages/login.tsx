@@ -66,7 +66,7 @@ const Login = () => {
           </Head>
           <main className={styles.main}>
             <HeaderGeneric  logoUrl="/" btnUrl="/register" btnContent="Quero fazer parte"/>
-            <Container className="py-5">
+            <Container className={styles.conatinerLogin}>
                 <p className={styles.formTitle}>Bem-vindo(a) de volta!</p>
                 <Form className={styles.form} onSubmit={handleLogin}>
                     <p className="text-center">Bem-vindo(a) ao OneBitflix</p>
@@ -101,9 +101,11 @@ const Login = () => {
                    </Button>
                 </Form>
                 <ToastComponent color={toastColor} isOpen={toastIsOpen} message={toastMessage}/>
-                
+               
             </Container>
+            <div className={styles.footerLogin}>
             <Footer/>
+            </div>
           </main>
         </>
     )

@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent {
+    flex: 1 0 auto;
+}
+//.searchContainer {
+  //  flex: 1 0 auto;
+//}
+
+.noSearchResult {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.headerFooterBg {
+    background-color: black;
+}
+
+.searchFooterBg {
+    background-color: black;
+}
