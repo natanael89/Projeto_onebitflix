@@ -5,7 +5,6 @@ import { episodesController } from "./controllers/episodesController";
 import { authController } from "./controllers/authController";
 import { ensureAuth, ensureAuthViaQuery } from "./middlewares/auth";
 import { favoriteController } from "./controllers/favoritesController";
-import e from "express";
 import { likesController } from "./controllers/likesController";
 import { usersController } from "./controllers/usersController";
 
