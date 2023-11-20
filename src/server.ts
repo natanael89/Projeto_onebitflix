@@ -1,8 +1,14 @@
+import dotenv from "dotenv"
+dotenv.config()
+
 import express from "express"
 import cors from "cors"
 import { adminJs, adminJsRouter } from "./adminjs"
 import { sequelize } from "./database"
 import { router } from "./routes"
+
+
+
 
 const app = express()
 

@@ -1,6 +1,7 @@
 import AdminJS, { PageHandler } from "adminjs"
 import { Category, Course, Episode, User } from "../models"
 
+
  
  export const dashboardOptions: {
     handler?: PageHandler
@@ -19,5 +20,6 @@ import { Category, Course, Episode, User } from "../models"
                 'Categorias': category,
                 'Usuários': standardUsers
             })
-        }
+        },
+        
  }

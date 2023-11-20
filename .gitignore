@@ -1,4 +1,8 @@
 node_modules/
 uploads/videos
 public/thumbnails
+.adminjs
 src/
+dist/
+
+.env
